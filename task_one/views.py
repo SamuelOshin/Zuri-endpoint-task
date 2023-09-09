@@ -3,7 +3,7 @@ import datetime
 
 def get_info(request):
     # Get query parameters from the URL
-    slack_name = request.GET.get('slack_name', 'Samuel Oshin')
+    slack_name = request.GET.get('slack_name', 'Samuel')
     track = request.GET.get('track', 'backend')
     
     # Get current day of the week
