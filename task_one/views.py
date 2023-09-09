@@ -3,7 +3,7 @@ import datetime
 
 def get_info(request):
     # Get query parameters from the URL
-    slack_name = request.GET.get('slack_name', 'Samuel')
+    slack_name = request.GET.get('slack_name')
     track = request.GET.get('track', 'backend')
     
     # Get current day of the week
@@ -13,8 +13,8 @@ def get_info(request):
     utc_time = datetime.datetime.utcnow().isoformat() + 'Z'
     
     # Get GitHub URLs
-    github_file_url = 'https://github.com/username/repo/blob/main/file_name.ext'
-    github_repo_url = 'https://github.com/username/repo'
+    github_file_url = 'https://github.com/<SamuelOshin>/<Zuri-endpoint-task>/task_one/views.py'
+    github_repo_url = 'https://github.com/SamuelOshin/Zuri-endpoint-task.git'
     
     # Create the response JSON
     response_data = {
