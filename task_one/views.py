@@ -14,7 +14,7 @@ def get_info(request):
     utc_time = datetime.datetime.now(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     
     # Get GitHub URLs
-    github_file_url = 'https://github.com/SamuelOshin/Zuri-endpoint-task/task_one/views.py'
+    github_file_url = 'https://github.com/SamuelOshin/Zuri-endpoint-task/blob/main/task_one/views.py'
     github_repo_url = 'https://github.com/SamuelOshin/Zuri-endpoint-task.git'
     
     
